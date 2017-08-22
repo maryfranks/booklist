@@ -12,6 +12,7 @@ class Book < ActiveRecord::Base
 
       book_list.each do |book|
         csv << [book.id, book.title, book.author, book.already_read]
+        puts book.title
       end
     end
   end
